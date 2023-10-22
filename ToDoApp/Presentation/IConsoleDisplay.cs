@@ -1,3 +1,5 @@
+using ToDoApp.Domain;
+
 namespace ToDoApp.Presentation;
 
 /// <summary>
@@ -5,6 +7,18 @@ namespace ToDoApp.Presentation;
 /// </summary>
 public interface IConsoleDisplay
 {
+    /// <summary>
+    /// Displays a single to-do item.
+    /// </summary>
+    /// <param name="toDos">The to-do item to display.</param>
+    void DisplatTo(ToDoItem toDos);
+
+    /// <summary>
+    /// Displays a list of to-do items.
+    /// </summary>
+    /// <param name="toDos">The list of to-do items to display.</param>
+    void DisplatToDos(IEnumerable<ToDoItem> toDos);
+
     /// <summary>
     /// Displays an informational message in white color.
     /// </summary>
