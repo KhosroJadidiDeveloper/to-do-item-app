@@ -11,13 +11,13 @@ public interface IConsoleDisplay
     /// Displays a single to-do item.
     /// </summary>
     /// <param name="toDos">The to-do item to display.</param>
-    void DisplatTo(ToDoItem toDos);
+    void DisplayToDo(ToDoItem toDos);
 
     /// <summary>
     /// Displays a list of to-do items.
     /// </summary>
     /// <param name="toDos">The list of to-do items to display.</param>
-    void DisplatToDos(IEnumerable<ToDoItem> toDos);
+    void DisplayToDos(IEnumerable<ToDoItem> toDos);
 
     /// <summary>
     /// Displays an informational message in white color.
